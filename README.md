@@ -12,4 +12,4 @@ document.dispatchEvent( new CustomEvent( 'myplugin', {'detail': { key1: 'jill' }
 It will update the output field (when page is in focus)<br/>
 So you have updated the Corona Lua component from the webpage.<br/>
 <br/>
-![alt text](https://raw.githubusercontent.com/prographo/coronajsplugin/main/Screenshot.png)
+![alt text](https://github.com/prographo/coronajsplugin/blob/master/Screenshot.png)
