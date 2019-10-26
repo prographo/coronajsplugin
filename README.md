@@ -8,3 +8,5 @@ Show Javascript console<br/>
 on console type: document.dispatchEvent( new CustomEvent( 'myplugin', {'detail': { key1: 'jill' } } ) )<br/>
 It will update the output field (when page is in focus)<br/>
 So you have updated the Corona Lua component from the webpage.<br/>
+<br/>
+![alt text](https://raw.githubusercontent.com/prographo/coronajsplugin/main/Screenshot.png)
