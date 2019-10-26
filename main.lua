@@ -5,14 +5,14 @@ local myplugin = require("myplugin")
 
 local label = display.newText( "output", 50, 220, native.systemFont, 16 )
 label.x = display.contentCenterX
-local data = native.newTextBox(160, 360, 320, 250)
-data.isEditable = false
+
 
 
 local setData = function()
 
   local data = { key1='jack', key2=123 }  
 	myplugin.set(data)
+  label.txt = "We set to: "..data.key1
   
 end
 
@@ -20,14 +20,16 @@ local getData = function()
 
 	local data = myplugin.get()
   
-	if data then
-		data.text = data.key1
+	if data and data.key1 then
+		label.text = "Data is: "..data.key1
 	end
 
 end
 
 local function eventListener( event ) 
-  print ("Hello "..event.key1)
+  local txt = "Incoming: ".. event.key1
+  print (txt)
+  label.text = txt
 end
 
 myplugin.addEventListener( eventListener )
